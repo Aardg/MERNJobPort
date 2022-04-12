@@ -1,0 +1,32 @@
+{
+  "name": "jobport",
+  "version": "1.0.0",
+  "description": "A job application portal",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Aaradhya Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "material-ui": "^0.20.2",
+    "mongoose": "^5.11.11",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "react-dropdown": "^1.9.1",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
